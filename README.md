@@ -1,1 +1,1 @@
-# Discord Bday
+# Send Discord Birthday Message
