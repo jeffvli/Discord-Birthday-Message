@@ -9,7 +9,7 @@ function Send-DiscordBirthdayMessage {
         [string]$CsvPath
     )
 
-    begin {
+    BEGIN {
         $CurrentDate = (Get-Date -Format "MM/dd").ToString()
         # Add as many images as you want here
         $RandomImage = Get-Random @(
@@ -17,13 +17,12 @@ function Send-DiscordBirthdayMessage {
         )
     }
 
-    process {
+    PROCESS {
         foreach ($Person in (Import-Csv $CsvPath)) {
             if ($Person.Bday -eq $CurrentDate) {
                 $Name = $Person.FirstName
                 $UserID = $Person.UserID
                 $Age = ((Get-Date -Format "yyyy") - $Person.Year).ToString()
-
                 if ($Age[1] -eq '1') {
                     $Ordinal = 'st'
                 }
