@@ -11,17 +11,9 @@ function Send-DiscordBirthdayMessage {
 
     begin {
         $CurrentDate = (Get-Date -Format "MM/dd").ToString()
+        # Add as many images as you want here
         $RandomImage = Get-Random @(
-            'https://i.imgur.com/geNNh0O.jpg'
-            'https://i.imgur.com/CrBDGuB.jpg'
-            'https://i.imgur.com/b8NPaQQ.jpg'
-            'https://i.imgur.com/ArBL7Ri.jpg'
-            'https://i.imgur.com/yXy7YL6.jpg'
-            'https://i.imgur.com/cWfox5o.jpg'
-            'https://i.imgur.com/usYRCTG.png'
-            'https://i.imgur.com/nHV8PDX.jpg'
-            'https://i.imgur.com/OR837Vb.jpg'
-            'https://i.imgur.com/7Th5WIH.jpg'
+            'https://i.imgur.com/codTMrQ.jpg'
         )
     }
 
