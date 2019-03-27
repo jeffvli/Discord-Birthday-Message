@@ -1,4 +1,4 @@
-# Discord Birthday Message
+# Discord-Birthday-Message
 Automatically send a discord birthday message to a specified channel when it is someone's birthday. Utilizes the [PSDiscord module](https://github.com/EvotecIT/PSDiscord) to interact with Discord webhooks.
 
 ## How to use
