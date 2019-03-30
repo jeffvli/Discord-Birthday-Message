@@ -40,7 +40,7 @@ function Send-DiscordBirthdayMessage {
                 }
 
                 $Image = New-DiscordThumbnail -Url $RandomImage
-                $Section = New-DiscordSection -Title "Happy $Age$Ordinal Birthday $Name!" -Image $Image -Description "<@$UserID>"
+                $Section = New-DiscordSection -Title "Happy $Age$Ordinal Birthday $Name!" -Image $RandomImage -Description "<@$UserID>"
                 Send-DiscordMessage -WebHookUrl $DiscordURI -Sections $Section
             }
         }
